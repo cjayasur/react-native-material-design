@@ -22,9 +22,9 @@ const AlbumRoute = () => {
         <React.Fragment>
 
             <View style={{ flex: 1, flexDirection: "row", backgroundColor: "green" }} >
-                <View style={{ backgroundColor: "yellow", flex: 0.2 }} />
-                <View style={{ backgroundColor: "blue", flex: 0.3 }} />
-                <View style={{ backgroundColor: "red", flex: 0.5 }} />
+                <View style={{ backgroundColor: "yellow", flex: 2 }} />
+                <View style={{ backgroundColor: "blue", flex: 3 }} />
+                <View style={{ backgroundColor: "red", flex: 5 }} />
             </View>
         </React.Fragment>
     )
