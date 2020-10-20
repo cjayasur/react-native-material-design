@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Text } from "react-native-paper";
-import {ScrollView, View} from "react-native";
+import {ScrollView, View, StyleSheet} from "react-native";
+import IconButton from "react-native-paper/src/components/IconButton";
 
 {/*
 https://reactnative.dev/docs/flexbox
@@ -18,16 +19,47 @@ https://reactnavigation.org/docs/getting-started
 
 */}
 const AlbumRoute = () => {
-    return(
+    return (
         <React.Fragment>
+            <View style={{flexDirection: "row", flex: 1}}>
 
-            <View style={{ flex: 1, flexDirection: "row", backgroundColor: "green" }} >
-                <View style={{ backgroundColor: "yellow", flex: 2 }} />
-                <View style={{ backgroundColor: "blue", flex: 3 }} />
-                <View style={{ backgroundColor: "red", flex: 5 }} />
+
+                <View style={{flex: 1}}>
+
+                    <IconButton
+                        icon="menu"
+                        color="green"
+                        size={20}
+                        onPress={() => console.log('Pressed')}
+                    />
+                    <IconButton
+                        icon="camera"
+                        color="red"
+                        size={20}
+                        onPress={() => console.log('Pressed')}
+                    />
+                    <IconButton
+                        icon="plus"
+                        color="red"
+                        size={20}
+                        onPress={() => console.log('Pressed')}
+                    />
+                </View>
+                <View style={{backgroundColor: "blue", flex:4, position: "relative"}}>
+                    <Text style={styles.text}>blue box</Text>
+                </View>
+                <View style={{backgroundColor: "red", flex: 4,position: "relative"}}>
+                    <Text style={styles.text}>red box</Text>
+                </View>
             </View>
         </React.Fragment>
     )
 }
+const styles= StyleSheet.create({
+    text:    {
+        color: 'black',
+        fontSize: 8,
+    },
+})
 
 export default AlbumRoute;

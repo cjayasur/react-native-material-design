@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import FeedRoute from "./FeedScreen";
 import AlbumRoute from "./AlbumScreen";
 import RecentRoute from "./RecentScreen";
+import GridRoute from "./GridScreen";
 import { BottomNavigation } from "react-native-paper";
 
 const Screen = () => {
@@ -10,12 +11,14 @@ const Screen = () => {
     { key: "feeds", title: "Feeds", icon: "message", color: "#3F51B5" },
     { key: "albums", title: "Albums", icon: "album", color: "#009688" },
     { key: "recents", title: "Recents", icon: "history", color: "#795548" },
+    { key: "grid", title: "Grid", icon: "plus", color: "#52133b" },
   ]);
 
   const renderScene = BottomNavigation.SceneMap({
     feeds: FeedRoute,
     albums: AlbumRoute,
     recents: RecentRoute,
+    grid: GridRoute,
   });
 
   return (
