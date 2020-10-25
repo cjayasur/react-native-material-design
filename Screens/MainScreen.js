@@ -4,6 +4,7 @@ import AlbumRoute from "./AlbumScreen";
 import RecentRoute from "./RecentScreen";
 import GridRoute from "./GridScreen";
 import { BottomNavigation } from "react-native-paper";
+import FlexGrid from "./FlexGridScreen";
 
 const Screen = () => {
   const [index, setIndex] = useState(0);
@@ -12,6 +13,7 @@ const Screen = () => {
     { key: "albums", title: "Albums", icon: "album", color: "#009688" },
     { key: "recents", title: "Recents", icon: "history", color: "#795548" },
     { key: "grid", title: "Grid", icon: "plus", color: "#52133b" },
+    { key: "flexibleGrid", title: "FlexGrid", icon: "minus", color: "#92133b" },
   ]);
 
   const renderScene = BottomNavigation.SceneMap({
@@ -19,6 +21,7 @@ const Screen = () => {
     albums: AlbumRoute,
     recents: RecentRoute,
     grid: GridRoute,
+    flexibleGrid: FlexGrid,
   });
 
   return (
