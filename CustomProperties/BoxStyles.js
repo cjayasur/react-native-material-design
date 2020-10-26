@@ -32,5 +32,27 @@ export default StyleSheet.create({
     boxText: {
         color: "darkslategray",
         fontWeight: "bold"
+    },
+    row:    {
+       flex:    1,
+       flexDirection: "row",
+       alignItems: "center",
+       alignSelf: "stretch",
+       backgroundColor: "green",
+       borderColor: "darkgray",
+       borderWidth: 1,
+    },
+    column: {
+        height: "auto",
+        width: "auto",
+        flex:    1,
+        flexDirection: "row",
+        flexWrap: "wrap",
+        alignItems: "center",
+        alignSelf: "stretch",
+        backgroundColor: "pink",
+        borderColor: "darkgray",
+        borderWidth: 1,
     }
+
 });

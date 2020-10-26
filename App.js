@@ -11,7 +11,7 @@ export default function App() {
     <PaperProvider theme={theme}>
       <TopBar />
 
-      <MainScreen />
+       <MainScreen />
     </PaperProvider>
   );
 }

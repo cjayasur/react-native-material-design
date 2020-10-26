@@ -5,6 +5,7 @@ import Box from "../Components/Box";
 import BoxStyles from "../CustomProperties/BoxStyles";
 import {blue50, green400, greenA100, purple500, red500, yellow800} from "react-native-paper/src/styles/colors";
 import {green500} from "react-native-paper";
+import Column from "../Components/Column";
 const styles = StyleSheet.create({
     container:  {
         flex:   1,
@@ -44,8 +45,24 @@ const RecentRoute = () =>{
             <View style={[BoxStyles.box, {backgroundColor: "red"}]} >
                 <Text style={BoxStyles.boxText}>Box 4 </Text>
             </View>
-            <Box boxColor={yellow800}> Box 7  </Box>
-            <Box boxColor={red500}> Box 7  </Box>
+            <Column>
+                <Box boxColor={yellow800} styleObj={[styles.box,{height: "auto", width: "auto",}]}> Box 6  </Box>
+                <Box boxColor={red500} styleObj={[styles.box,{height: "auto", width: "auto",}]}> Box 6  </Box>
+                <Box boxColor={yellow800} styleObj={[styles.box,{height: "auto", width: "auto",}]}> Box 6  </Box>
+                <Box boxColor={red500} styleObj={[styles.box,{height: "auto", width: "auto",}]}> Box 6  </Box>
+                <Box boxColor={yellow800} styleObj={[styles.box,{height: "auto", width: "auto",}]}> Box 6  </Box>
+                <Box boxColor={red500} styleObj={[styles.box,{height: "auto", width: "auto",}]}> Box 6  </Box>
+                <Box boxColor={yellow800} styleObj={[styles.box,{height: "auto", width: "auto",}]}> Box 6  </Box>
+                <Box boxColor={red500} styleObj={[styles.box,{height: "auto", width: "auto",}]}> Box 6  </Box>
+                <Box boxColor={yellow800} styleObj={[styles.box,{height: "auto", width: "auto",}]}> Box 6  </Box>
+                <Box boxColor={red500} styleObj={[styles.box,{height: "auto", width: "auto",}]}> Box 6  </Box>
+                <Box boxColor={yellow800} styleObj={[styles.box,{height: "auto", width: "auto",}]}> Box 6  </Box>
+                <Box boxColor={red500} styleObj={[styles.box,{height: "auto", width: "auto",}]}> Box 6  </Box>
+                <Box boxColor={yellow800} styleObj={[styles.box,{height: "auto", width: "auto",}]}> Box 6  </Box>
+                <Box boxColor={red500} styleObj={[styles.box,{height: "auto", width: "auto",}]}> Box 6  </Box>
+                <Box boxColor={yellow800} styleObj={[styles.box,{height: "auto", width: "auto",}]}> Box 6  </Box>
+                <Box boxColor={red500} styleObj={[styles.box,{height: "auto", width: "auto",}]}> Box 6  </Box>
+            </Column>
             <Box boxColor={purple500}> Box 7  </Box>
             <Box boxColor={greenA100}> Box 7  </Box>
         </View>
